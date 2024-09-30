@@ -191,7 +191,7 @@ def get_user_info(client, state, args) -> Union[message.OpenIDSchema, dict]:
             # else:
             #     userinfo = client.do_user_info_request(state=aresp["state"])
             try:
-                user_info = client.do_user_info_request(state=state)
+                user_info = client.do_user_info_request(state=state, method='GET')
             except RequestError as exc:
                 logger.error(
                     "Authentication failed, probably missing openid scope",
