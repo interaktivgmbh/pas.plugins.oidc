@@ -9,6 +9,34 @@
 
 <!-- towncrier release notes start -->
 
+## 2.0.0b3 (2025-02-03)
+
+
+### New features:
+
+- Register the adapter as needed by the @login endpoint present in plone.restapi @erral [#47](https://github.com/collective/pas.plugins.oidc/issues/47)
+- Changes to make compatible with OAM (Oracle Access Manager) @djay [#65](https://github.com/collective/pas.plugins.oidc/pull/64)
+
+
+### Internal:
+
+- Bump plone.restapi to 9.10.0 [@ericof]
+
+
+## 2.0.0b2 (2024-12-09)
+
+
+### New features:
+
+- Update the Deutsch translation [macagua] [#60](https://github.com/collective/pas.plugins.oidc/issues/60)
+- Implement control panel to configure pas.plugins.oidc [@ericof] [#65](https://github.com/collective/pas.plugins.oidc/issues/65)
+
+
+### Documentation:
+
+- Fixed port numbers on README file [macagua] [#51](https://github.com/collective/pas.plugins.oidc/issues/51)
+
+
 ## 2.0.0b1 (2024-06-25)
 
 
