@@ -167,6 +167,9 @@ class BackChannelLogoutView(BrowserView):
                 if manager[secret_key]:
                     manager.clear(ring=secret_key)
                     manager.rotate(ring=secret_key)
+                # Clear the jwt tokens for the user (Volto)
+                jwt_auth = api.portal.get_tool("acl_users").jwt_auth
+                jwt_auth.clear_user_tokens(userid)
             else:
                 logger.error(
                     "For the backchannel logout, the session PAS needs to be configured with 'per user keyring'."
