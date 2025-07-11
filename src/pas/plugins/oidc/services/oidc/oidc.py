@@ -138,7 +138,7 @@ class LogoutGet(LoginOIDC):
                     "message": _("Provider is not properly configured."),
                 }
             }
-        redirect_uri = utils.url_cleanup(api.portal.get().absolute_url())
+        redirect_uri = utils.url_cleanup(api.portal.get().absolute_url() + "/logout")
 
         if plugin.getProperty("use_deprecated_redirect_uri_for_logout"):
             args = {
